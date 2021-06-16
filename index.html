@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Channels</title>
+  <style>
+    table {
+      border-spacing: 1;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 6px;
+      overflow: hidden;
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+    }
+    table * {
+      position: relative;
+    }
+    table td, table th {
+      padding-left: 8px;
+    }
+    table th {
+      height: 60px;
+      background: #FFED86;
+      font-size: 60px;
+    }
+    table tr td {
+      font-size: 50px;
+      width: 50%;
+    }
+    table tbody tr {
+      height: 100px;
+      border-bottom: 1px solid #E3F1D5;
+    }
+    table tbody tr:last-child {
+      border: 0;
+    }
+    table td, table th {
+      text-align: center;
+    }
+    table td.l, table th.l {
+      text-align: right;
+    }
+    table td.c, table th.c {
+      text-align: center;
+    }
+    table td.r, table th.r {
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+    }
+    img {
+      width: 20%;
+      height: 20%;
+    }
+
+    @media screen and (max-width: 35.5em) {
+      table {
+        display: block;
+      }
+      table > *, table tr, table td, table th {
+        display: block;
+      }
+      table thead {
+        display: none;
+      }
+      table tbody tr {
+        height: auto;
+        padding: 8px 0;
+      }
+      table tbody tr td {
+        padding-left: 45%;
+        margin-bottom: 12px;
+      }
+      table tbody tr td:last-child {
+        margin-bottom: 0;
+      }
+      table tbody tr td:before {
+        position: absolute;
+        font-weight: 700;
+        width: 50%;
+        left: 10px;
+        top: 0;
+      }
+      table tbody tr td:nth-child(1):before {
+        content: "Code";
+      }
+      table tbody tr td:nth-child(2):before {
+        content: "Stock";
+      }
+      table tbody tr td:nth-child(3):before {
+        content: "Cap";
+      }
+      table tbody tr td:nth-child(4):before {
+        content: "Inch";
+      }
+      table tbody tr td:nth-child(5):before {
+        content: "Box Type";
+      }
+    }
+    body {
+      background: #9BC86A;
+      font: 400 14px 'Calibri','Arial';
+      padding: 20px;
+    }
+
+    blockquote {
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body onload="myFunction()">
+    <table id="myTable">
+    
+    <!-- <thead>
+      <tr>
+        <th colspan="2"><center>हिंदी चैनल</center></th>
+      </tr>
+    <thead>
+    <tbody>
+
+    <tr>
+        <td>
+          <a href="https://www.sonyliv.com/live-tv/SAB-1000009248" target="blank">
+            <center><img src="https://static.wikia.nocookie.net/logopedia/images/e/e5/Sony_SAB.svg/revision/latest/scale-to-width-down/200?cb=20200717140818" alt="सब टीवी"></center>
+          </a>
+        </td>
+        <td><a href="https://www.sonyliv.com/live-tv/SAB-1000009248" target="blank">सब टीवी</a></td>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="https://www.sonyliv.com/live-tv/SAB-1000009248" target="blank">
+            <center><img src="https://static.wikia.nocookie.net/logopedia/images/e/e5/Sony_SAB.svg/revision/latest/scale-to-width-down/200?cb=20200717140818" alt="सब टीवी"></center>
+          </a>
+        </td>
+        <td><a href="https://www.sonyliv.com/live-tv/SAB-1000009248" target="blank">सब टीवी</a></td>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="https://www.sonyliv.com/live-tv/SAB-1000009248" target="blank">
+            <center><img src="https://static.wikia.nocookie.net/logopedia/images/e/e5/Sony_SAB.svg/revision/latest/scale-to-width-down/200?cb=20200717140818" alt="सब टीवी"></center>
+          </a>
+        </td>
+        <td><a href="https://www.sonyliv.com/live-tv/SAB-1000009248" target="blank">सब टीवी</a></td>
+      </tr>
+
+    </tbody> -->
+
+  </table>
+
+    <script type="text/javascript">
+    function myFunction() {
+      data = [
+        {
+          "category": "हिंदी चैनल",
+        },
+        {
+          "name": "सब टीवी",
+          "link": "https://www.sonyliv.com/live-tv/SAB-1000009248", 
+          "img": "https://upload.wikimedia.org/wikipedia/en/b/b3/Sony_SAB_%28TV%29.png",
+        },
+        {
+          "name": "सोनी टीवी",
+          "link": "https://www.sonyliv.com/live-tv/SET-Live-1000009246", 
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/SET_India_logo.svg/330px-SET_India_logo.svg.png",
+        },
+        {
+          "name": "सेट मैक्स",
+          "link": "https://www.sonyliv.com/live-tv/MAX-1000009247", 
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Sony_MAX.svg/195px-Sony_MAX.svg.png",
+        },
+        {
+          "name": "सेट मैक्स 2",
+          "link": "https://www.sonyliv.com/live-tv/MAX2-1000044878", 
+          "img": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Sony_Max_2_India.jpg",
+        },
+        {
+          "name": "सोनी वाह",
+          "link": "https://www.sonyliv.com/live-tv/Sony-WAH-1000009253", 
+          "img": "https://upload.wikimedia.org/wikipedia/en/7/77/Sonywah.jpg",
+        },
+        {
+          "name": "सोनी पल",
+          "link": "https://www.sonyliv.com/live-tv/PAL-1000009273", 
+          "img": "https://upload.wikimedia.org/wikipedia/en/6/62/Sony_pal.png",
+        },
+        {
+          "name": "ज़ी टीवी",
+          "link": "https://www.zee5.com/channels/details/zee-tv-hd/0-9-zeetvhd", 
+          "img": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Zee_TV-2018.png",
+        },
+        {
+          "name": "ज़ी सिनेमा",
+          "link": "https://www.zee5.com/channels/details/zee-cinema-hd/0-9-zeecinemahd", 
+          "img": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Zee_Cinema_New_Logo.png/300px-Zee_Cinema_New_Logo.png",
+        },
+        {
+          "name": "ज़ी क्लासिक",
+          "link": "https://www.zee5.com/channels/details/zee-classic/0-9-176", 
+          "img": "https://i.postimg.cc/8zFzsPz6/Screenshot-2019-02-28-12-04-10-396.jpg",
+        },
+        {
+          "name": "ज़ी अनमोल",
+          "link": "https://www.zee5.com/channels/details/zee-anmol/0-9-zeeanmol", 
+          "img": "https://www.smartads.in/resources/assets/uploads/product_group/Television/Zee_Anmol_India.png",
+        },
+        {
+          "name": "ज़ी बॉलीवुड",
+          "link": "https://www.zee5.com/channels/details/zee-bollywood/0-9-zeeclassic", 
+          "img": "https://static.wikia.nocookie.net/logopedia/images/5/5b/Zee_bollywood_21AUg2018.jpg",
+        },
+        {
+          "name": "ज़ी एक्शन",
+          "link": "https://www.zee5.com/channels/details/zee-action/0-9-zeeaction", 
+          "img": "https://static.wikia.nocookie.net/logopedia/images/8/83/Zee_Action_new.png",
+        },
+        {
+          "name": "एंड टीवी",
+          "link": "https://www.zee5.com/channels/details/-tv-hd/0-9-tvhd_0", 
+          "img": "https://static.wikia.nocookie.net/logopedia/images/8/8c/%26TV.jpg",
+        },
+        {
+          "name": "एंड पिक्चर्स",
+          "link": "https://www.zee5.com/channels/details/-pictures-hd/0-9-tvpictureshd", 
+          "img": "https://akamaividz2.zee5.com/image/upload/w_407,h_229,c_scale,f_auto,q_auto/resources/0-9-pictures/channel_list/09picturespictures.png",
+        },
+        {
+          "name": "एंड एक्सप्लोर",
+          "link": "https://www.zee5.com/channels/details/-xplorhd/0-9-209", 
+          "img": "https://static.wikia.nocookie.net/logopedia/images/a/a8/%26xplor_HD.svg",
+        },
+        {
+          "name": "स्टार प्लस",
+          "link": "https://www.hotstar.com/1260000017", 
+          "img": "https://upload.wikimedia.org/wikipedia/en/9/90/StarPlus_logo.jpg",
+        },
+        {
+          "name": "स्टार उत्सव",
+          "link": "https://www.hotstar.com/1260000020", 
+          "img": "https://static.wikia.nocookie.net/logopedia/images/6/65/Star_utsav.png",
+        },
+        {
+          "name": "स्टार भारत",
+          "link": "https://www.hotstar.com/1260000020", 
+          "img": "https://upload.wikimedia.org/wikipedia/en/4/40/Star_Bharat_Official_Logo.jpg",
+        },
+        {
+          "category": "मराठी चैनल",
+        },
+        {
+          "name": "स्टार भारत",
+          "link": "https://www.hotstar.com/1260000020", 
+          "img": "https://upload.wikimedia.org/wikipedia/en/4/40/Star_Bharat_Official_Logo.jpg",
+        },
+        {
+          "category": "हिंदी न्यूज़ चैनल",
+        },
+        {
+          "name": "आज तक",
+          "link": "https://www.zee5.com/channels/details/aaj-tak/0-9-aajtak", 
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/AT-New-Logo-800x600.png/300px-AT-New-Logo-800x600.png",
+        },
+        {
+          "name": "ज़ी न्यूज़",
+          "link": "https://www.zee5.com/channels/details/zee-news/0-9-zeenews", 
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Zee_news.svg/330px-Zee_news.svg.png",
+        },
+        {
+          "name": "इंडिया टीवी",
+          "link": "https://www.zee5.com/channels/details/india-tv/0-9-282", 
+          "img": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b5/India_tv.png/375px-India_tv.png",
+        },
+        {
+          "category": "स्पोर्ट्स चैनल",
+        },
+        {
+          "name": "स्टार स्पोर्ट्स 1 हिंदी",
+          "link": "https://www.hotstar.com/1260000025", 
+          "img": "https://www.indiantelevision.com/sites/default/files/styles/smartcrop_800x800/public/images/tv-images/2019/07/02/starsports.jpg",
+        },
+        {
+          "name": "स्टार स्पोर्ट्स 1",
+          "link": "https://www.hotstar.com/1260000035", 
+          "img": "https://www.indiantelevision.com/sites/default/files/styles/smartcrop_800x800/public/images/tv-images/2019/04/19/starspoerts1.jpg",
+        },
+        {
+          "name": "स्टार स्पोर्ट्स 2",
+          "link": "https://www.hotstar.com/1260000033", 
+          "img": "https://i.pinimg.com/originals/27/a5/3a/27a53a041be3eb0b8574c267e071a1ff.png",
+        },
+        {
+          "name": "सोनी सिक्स",
+          "link": "https://www.sonyliv.com/live-tv/SIX-HD-1000009275", 
+          "img": "https://upload.wikimedia.org/wikipedia/en/2/20/Sony_SIX_logo.png",
+        },
+        {
+          "name": "सोनी टेन 1",
+          "link": "https://www.sonyliv.com/live-tv/Ten-1-HD-1000009276", 
+          "img": "https://origin-staticv2.sonyliv.com/masthead_logo/SonyTEN1HD_Masthead_Logo.png",
+        },
+        {
+          "name": "सोनी टेन 2",
+          "link": "https://www.sonyliv.com/live-tv/Ten-2-HD-1000009277", 
+          "img": "https://origin-staticv2.sonyliv.com/masthead_logo/SonyTEN2_Masthead_Logo.png",
+        },
+        {
+          "name": "सोनी टेन 3",
+          "link": "https://www.sonyliv.com/live-tv/Ten-3-HD-1000009278", 
+          "img": "https://origin-staticv2.sonyliv.com/masthead_logo/SonyTEN3_Masthead_Logo.png",
+        },
+        {
+          "name": "सोनी टेन 4",
+          "link": "https://www.sonyliv.com/live-tv/Ten-4-HD-1000119186", 
+          "img": "https://origin-staticv2.sonyliv.com/masthead_logo/SonyTEN4HD_Masthead_Logo.png",
+        },
+      ]
+      inner_count = Object.keys(data).length;
+      var table = document.getElementById("myTable");
+
+      for (i=0; i<data.length; i++)
+      {
+        row_data = data[i];
+        var row = table.insertRow(i);
+
+        if ("category" in row_data) {
+          var th = document.createElement("th");
+          th.innerHTML = row_data["category"];
+          th.setAttribute("colspan", 2);
+          row.append(th);
+          continue;
+        }
+
+        // cell 1
+        var cell1 = row.insertCell(0);
+
+        var a = document.createElement("a");
+        a.setAttribute("href", row_data["link"]);
+        a.setAttribute("target", "blank");
+
+        var center = document.createElement("center");
+
+        var img = document.createElement("img");
+        img.setAttribute("src", row_data["img"]);
+        img.setAttribute("alt", row_data["name"]);
+
+        center.append(img);
+        a.append(center);
+        cell1.append(a);
+
+        // cell 2
+        var cell2 = row.insertCell(1);
+
+        var a = document.createElement("a");
+        a.setAttribute("href", row_data["link"]);
+        a.setAttribute("target", "blank");
+
+        var center = document.createElement("center");
+        center.innerHTML = row_data["name"];
+
+        a.append(center);
+        cell2.append(a);
+      }
+    }
+  </script>
+</body>
+</html>
