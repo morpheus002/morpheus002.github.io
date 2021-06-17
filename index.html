@@ -163,6 +163,7 @@
       data = [
         {
           "category": "हिंदी सिरिअल",
+          "id": "hindi_serial",
         },
         {
           "name": "सब टीवी",
@@ -211,6 +212,7 @@
         },
         {
           "category": "हिंदी फिल्म",
+          "id": "hindi_film",
         },
         {
           "name": "सेट मैक्स",
@@ -258,7 +260,18 @@
           "img": "https://static.wikia.nocookie.net/logopedia/images/a/a8/%26xplor_HD.svg",
         },
         {
+          "name": "यप मूवीज",
+          "link": "http://www.vimoviesandtv.in/live-tv-channels/detail/89118/yupp-hindi-premium-movies", 
+          "img": "https://1.bp.blogspot.com/-SohFStPnayk/YLjfG0xmuXI/AAAAAAAACLA/802V12cwAusuh5xWDjHgegkzcrKshYZGQCLcBGAsYHQ/s1200/IndianClicks_YuppTV_Logo_Gulte_700x467_01112020_1_1-1200x675.jpg",
+        },
+        {
+          "name": "नेक्स्ट मूवीज",
+          "link": "http://www.vimoviesandtv.in/live-tv-channels/detail/115012/nexg-movies", 
+          "img": "https://images.assettype.com/afaqs%2Fimport%2Fall%2Fnews%2Fimages%2Fnews_story_grfx%2F2016%2F06%2F48343%2FnexGTv-Logo.jpg",
+        },
+        {
           "category": "मराठी चैनल",
+          "id": "marathi_channel",
         },
         {
           "name": "सोनी मराठी",
@@ -271,13 +284,24 @@
           "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Zee_Marathi_Official_Logo.jpg/375px-Zee_Marathi_Official_Logo.jpg",
         },
         {
+          "name": "ज़ी चित्रमंदिर",
+          "link": "https://www.zee5.com/channels/details/zee-chitramandir/0-9-394", 
+          "img": "https://static.wikia.nocookie.net/logopedia/images/8/84/Zee_Chitramandir.jpg",
+        },
+        {
           "name": "स्टार प्रवाह",
           "link": "https://www.hotstar.com/1260000006", 
           "img": "https://static.wikia.nocookie.net/logopedia/images/1/1a/Star_Pravah_2019.png",
         },
+        {
+          "name": "कलर्स मराठी",
+          "link": "http://www.vimoviesandtv.in/live-tv-channels/detail/361277/colors-marathi", 
+          "img": "https://upload.wikimedia.org/wikipedia/en/6/6c/Colors_Marathi.png",
+        },
 
         {
           "category": "हिंदी न्यूज़ चैनल",
+          "id": "hindi_news_channel",
         },
         {
           "name": "आज तक",
@@ -296,6 +320,17 @@
         },
         {
           "category": "म्यूज़िक चैनल",
+          "id": "music_channel",
+        },
+        {
+          "name": "म्यूज़िक इंडिया",
+          "link": "http://www.vimoviesandtv.in/live-tv-channels/detail/84731/music-india",
+          "img": "https://pbs.twimg.com/profile_images/618036953/music_india.png",
+        },
+        {
+          "name": "मस्ती",
+          "link": "http://www.vimoviesandtv.in/live-tv-channels/detail/267384/mastii",
+          "img": "https://static.wikia.nocookie.net/logopedia/images/e/e2/Mastiii_Sabgroup.jpg",
         },
         {
           "name": "9XM",
@@ -314,6 +349,12 @@
         },
         {
           "category": "भक्त्ति चैनल",
+          "id": "bhakti_channel",
+        },
+        {
+          "name": "आस्था",
+          "link": "http://www.vimoviesandtv.in/live-tv-channels/detail/89087/aastha-tv",
+          "img": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Aastha-TV.jpg/225px-Aastha-TV.jpg",
         },
         {
           "name": "संस्कार",
@@ -332,6 +373,7 @@
         },
         {
           "category": "स्पोर्ट्स चैनल",
+          "id": "स्पोर्ट्स चैनल",
         },
         {
           "name": "स्टार स्पोर्ट्स 1 हिंदी",
@@ -386,6 +428,7 @@
           var th = document.createElement("th");
           th.innerHTML = row_data["category"];
           th.setAttribute("colspan", 2);
+          th.setAttribute("id", row_data["id"])
           row.append(th);
           continue;
         }
